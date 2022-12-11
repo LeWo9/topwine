@@ -32,7 +32,7 @@ def handle_text(message):
     elif message.text.strip() == 'Температура подачи' :
             answer = tempr
     else:
-            answer = ('Вы написали: ' + message.text)
+            answer = ('Вы написали: ' + message.text + "\nЧтобы узнать, что я могу, нажми: /start")
     # Отсылаем юзеру сообщение в его чат
     bot.send_message(message.chat.id, answer)
 
